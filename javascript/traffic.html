@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .section{
+            background-color: #86d2f2;
+            height: 100vh;
+        }
+        .signal{
+            height: 300px;
+            width: 160px;
+        }
+        .bt{
+            height: 50px;
+            width: 70px;
+            font-size: 13px;
+            margin-bottom: 30px;
+            background-color: #1f1d41;
+            color: white;
+            border-radius: 16px;
+        }
+        .bt2{
+            height: 50px;
+            width: 50px;
+            font-size: 13px;
+            margin-bottom: 30px;
+            border-radius: 30px;
+            border: none;
+            background-color: #4b5069;
+        }
+        .traffic{
+            background-color: #1f1d41;
+            width: 130px;
+            height: 300px;
+            border-radius: 50px;
+        }
+        #b{
+            margin-top: 150px;
+        }
+    </style>
+    <script>
+        function stop(){
+            document.getElementById("b1").style.backgroundColor="#cf1124";
+            document.getElementById("b11").style.backgroundColor="#cf1124";
+            document.getElementById("b12").style.backgroundColor="#1f1d41"
+            document.getElementById("b13").style.backgroundColor="#1f1d41"
+            document.getElementById("b2").style.backgroundColor="#4b5069"
+            document.getElementById("b3").style.backgroundColor="#4b5069"
+        }
+        function ready(){
+            document.getElementById("b2").style.backgroundColor="#f7c948";
+            document.getElementById("b12").style.backgroundColor="#f7c948";
+            document.getElementById("b11").style.backgroundColor="#1f1d41"
+            document.getElementById("b13").style.backgroundColor="#1f1d41"
+            document.getElementById("b1").style.backgroundColor="#4b5069"
+            document.getElementById("b3").style.backgroundColor="#4b5069"   
+        }
+        function go(){
+            document.getElementById("b3").style.backgroundColor="#199473";
+            document.getElementById("b13").style.backgroundColor="#199473";
+            document.getElementById("b12").style.backgroundColor="#1f1d41"
+            document.getElementById("b11").style.backgroundColor="#1f1d41"
+            document.getElementById("b2").style.backgroundColor="#4b5069"
+            document.getElementById("b1").style.backgroundColor="#4b5069"   
+        }
+    </script>
+</head>
+<body>
+    <div class="section">
+        <h1 class="text-center">Traffic Lights</h1>
+        <div class="d-flex flex-row justify-content-center " id="b">
+            <div class="signal  d-flex flex-column justify-content-center align-items-center">
+                <button class="bt" onclick="stop()" id="b11">Stop</button>
+                <button class="bt" onclick="ready()" id="b12">Ready</button>
+                <button class="bt" onclick="go()" id="b13">Go</button>
+            </div>
+            <div class="traffic  d-flex flex-column justify-content-center align-items-center">
+                <button class="bt2" id="b1"></button>
+                <button class="bt2" id="b2"></button>
+                <button class="bt2" id="b3"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

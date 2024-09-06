@@ -1,0 +1,91 @@
+.container{
+    background-image: url("https://assets.ccbp.in/frontend/react-js/social-buttons-bg.png");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin: 0;
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.buttons{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.buttons1{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+.bt1{
+    height: 50px;
+    width: 80px;
+    border: none;
+    border-radius: 15px;
+    background-color: #eab308;
+    color: white;
+}
+.bt2{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: black;
+}
+.bt3{
+    height: 50px;
+    width: 80px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1d4ed8;
+    color: white;
+}
+
+@media (max-width:767px){
+    .buttons{
+        display: none;
+    }
+    .bt1{
+        height: 80px;
+        width: 120px;
+        border: none;
+        border-radius: 15px;
+        background-color: #eab308;
+        color: white;
+        font-size: 25px;
+    }
+    .bt2{
+        height: 80px;
+        width: 160px;
+        border: none;
+        border-radius: 15px;
+        background-color: #ffffff;
+        color: black;
+        font-size: 25px;
+    }
+    .bt3{
+        height: 80px;
+        width: 120px;
+        border: none;
+        border-radius: 15px;
+        background-color: #1d4ed8;
+        color: white;
+        font-size: 25px;
+    }
+}
+@media (min-width:768px){
+    .buttons1{
+        display: none;
+    }
+}

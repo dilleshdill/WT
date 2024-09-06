@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <link rel="stylesheet" href="notification-1.css">
+</head>
+<body>
+    <div id="root" class="container"></div>
+    <script type="text/babel">
+        const element = <div className="greating">
+            <h1 className="heading">Notifications</h1>
+            <div className = "para1"><div><img className="image" src="https://assets.ccbp.in/frontend/react-js/primary-icon-img.png" alt=""/></div><div className="paddingleft"> Information Message</div></div>
+            <div className = "para2"><div><img className="image" src="https://assets.ccbp.in/frontend/react-js/success-icon-img.png" alt=""/></div><div className="paddingleft">Success Message</div></div>
+            <div className = "para3"><div><img className="image" src="https://assets.ccbp.in/frontend/react-js/warning-icon-img.png" alt=""/></div><div className="paddingleft">Warning Message</div></div>
+            <div className = "para4"><div><img className="image" src="https://assets.ccbp.in/frontend/react-js/danger-icon-img.png" alt=""/></div><div className="paddingleft">Error Message</div></div>
+            </div>
+        ReactDOM.render(element,document.getElementById("root"));
+    </script>
+</body>
+</html>

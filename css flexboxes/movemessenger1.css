@@ -1,0 +1,35 @@
+.container{
+    background-color: #fef7e7;
+    height: 100vh;
+    padding-left: 20px;
+}
+body{
+    margin: 0;
+}
+.img{
+    height: 400px;
+    width: 400px;
+}
+.bt{
+    height: 45px;
+    width: 130px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f1b80b;
+    color: white;
+}
+@media(min-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .imgcontainer{
+        order: 2;
+    }
+    .discription{
+        order: 1;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <div class="nav">
+            <ul>
+                <li>icon</li>
+                <li onmouseover="open('store')">store</li>
+                <li onmouseover="open('mac')">mac</li>
+                <li>ipad</li>
+                <li>iphone</li>
+                <li>watch</li>
+                <li>Airpods</li>
+                <li>Tv & Home</li>
+                <li>Entertainment</li>
+                <li>Accessories</li>
+                <li>support</li>
+            </ul>  
+        </div> 
+    </div>
+    <div id="store" >
+        <div class="top" >
+            <div >
+                <ul>
+                    <li>shop</li>
+                    <li>shop the latest</li>
+                    <li>mac</li>
+                    <li>ipad</li>
+                    <li>iphone</li>
+                    <li>apple watch</li>
+                    <li>Accessories</li>
+                </ul>
+            </div >
+            <div>
+                <ul>
+                    <li>quick links</li>
+                    <li>find a store</li>
+                    <li>order status</li>
+                    <li>ways to buy</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>shop special stores</li>
+                    <li>education</li>
+                    <li>bussiness</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom" onmouseover="free()">
+
+        </div>
+    </div>
+        <div class="description">
+            <p>Get up to ₹3000.00 instant savings on selected Apple Watch models with eligible </p>
+            <p>HDFC Bank cards. Footnote  Plus No Cost EMI from most leading banks.</p>
+        </div>
+        <div class="remain">
+            <div class="subdiv">
+                <div class="lef">
+                    <h1>Shop Apple Watch</h1>
+                </div>
+                <div class="help">
+                    <div class="left">
+                        <span>icon</span>
+                        <span>icon</span>
+                    </div>
+                    <div class="right">
+                        <span>Need shopping help?</span>
+                        <span><a href="#">Ask an apple watch specialist</a></span>
+                        <span>Visit an Apple Store</span>
+                        <span><a href="#">Find one near you</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        let last = null;
+        function open(divname)
+        {
+            document.getElementById(divname).style.display = "block";
+            last = divname;
+        }        
+        function free() 
+        {
+            if (last != null) {
+                document.getElementById(last).style.display = "none";
+                last = null;
+            }
+        }
+    </script>
+        
+</body>
+</html>

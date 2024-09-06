@@ -1,0 +1,40 @@
+.section{
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+}
+.paragraph{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+.maincard{
+    display: flex;
+    flex-direction:column;
+    padding-top: 20px;
+    padding-left:30% ;
+    padding-right: 30%;
+    justify-content: center;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input{
+    width: 100px;
+    height: 40px;
+}
+.custom-bt{
+    width: 100px;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+.updated{
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 30px;
+}

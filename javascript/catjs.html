@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catjs1.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dark-background text-center">
+        <div>
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png"
+            class="bulb-image"
+            id="bulbImage"
+          />
+        </div>
+        <div>
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png"
+            class="cat-image"
+            id="catImage"
+          />
+        </div>
+        <div class="d-flex flex-row justify-content-center pt-5">
+          <div class="switch-board">
+            <h1 class="switch-status" id="switchStatus">Switched On</h1>
+            <button class="off-switch" id="offSwitch" onclick="switchOff()">
+              OFF
+            </button>
+            <button class="on-switch" id="onSwitch" onclick="switchOn()">
+              ON
+            </button>
+          </div>
+        </div>
+      </div>
+      <script src="catjs1-1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

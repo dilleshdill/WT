@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .img{
+            width: 200px;
+        }
+        .pa{
+            width: 400px;
+            margin-left: 500px;
+            padding: 20px;
+        }
+        .par{
+            color: red;
+            font-family: "roboto";
+            font-size: 30px;
+        }
+        .bt{
+            border: none;
+            width: 50px;
+            background-color: white;
+            font-size: 20px;
+        }
+        .hr1{
+            background-color: black;
+            width: 1px;
+            height: 20px;
+        }
+        .btc{
+            background-color: white;
+            width: 140px;
+            margin-left: 600px;
+        }
+    </style>
+    <script>
+        let a=200;
+        function increase(){
+            let b=a+5
+            a=b
+            document.getElementById("sp").textContent=b+"px";
+            document.getElementById("im").style.width=parseInt(b)+"px";
+            if(a>295){
+                document.getElementById("para").textContent="Too big. Decrease the Size of the Image";
+                document.getElementById("im").style.width=300+"px";
+                document.getElementById("sp").textContent=300+"px";
+            }
+            else{
+                document.getElementById("para").textContent="";
+            }
+        }
+        function decrease(){
+            let b=a-5
+            a=b
+            document.getElementById("sp").textContent=b+"px";
+            document.getElementById("im").style.width=parseInt(b)+"px";
+            if(a<105){
+                document.getElementById("para").textContent="Can't Visible. Increase the Size of the Image";
+                document.getElementById("im").style.width=100+"px";
+                document.getElementById("sp").textContent=100+"px";
+            }
+            else if(a<300 && a>100){
+                document.getElementById("para").textContent="";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="section text-center pt-5">
+        <h1>Sizing an image</h1>
+        <p class="pa">Increase the width of an image by clicking the plus button and decrease by clicking the Minus button. For every action, the image increases or decreases by 5px.</p>
+        <div>
+            <p id="para" class="par"></p>
+        </div>
+        <div>
+            <img class="img" id="im" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/sizing-an-image-img.png" alt="">
+            <p>width: <span id="sp"></span></p>
+        </div>
+        <div class="btc d-flex flex-row justify-content-center shadow">
+            <button class="bt" onclick="decrease()">-</button>
+            <hr class="hr1" />
+            <span class="pt-3 pl-2 pr-2">5px</span>
+            <hr class="hr1" >
+            <button class="bt" onclick="increase()">+</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
